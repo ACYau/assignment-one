@@ -1,0 +1,10 @@
+@use 'partials/variables' as *;
+@use 'partials/header';
+@use 'partials/main';
+@use 'partials/footer';
+
+body {
+    background-color: $backgroundcolor1;
+    font-style: $fontStyle1;
+    color: $fontcolor1;
+}
