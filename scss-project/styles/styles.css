@@ -1,7 +1,23 @@
 h1 {
-  background-color: "EmblemaOne";
+  background-color: #F5C8CF;
   font-style: "EmblemaOne";
   color: #1D81CC;
+}
+
+nav {
+  background-color: #F0F5FF;
+  font-style: "EmblemaOne";
+  color: #042259;
+}
+nav ul {
+  background-color: #F0F5FF;
+  font-style: "EmblemaOne";
+  color: #042259;
+}
+nav ul li {
+  background-color: #F0F5FF;
+  font-style: "EmblemaOne";
+  color: #042259;
 }
 
 body {
