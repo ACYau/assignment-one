@@ -3,8 +3,35 @@
 @use 'partials/main';
 @use 'partials/footer';
 
-body {
+/*Base Style CSS for the site*/
+html {
+    /*Default Background colour set to pale rose*/
     background-color: $backgroundcolor1;
-    font-style: $fontStyle1;
-    color: $fontcolor1;
+    /*Default Font set to Emblema One*/
+    font-family: $font-family1;
+    /*Defauly Font colour set to water blue*/
+    color: $fontcolor3;
+}
+
+header{
+    height:100vh;
+    padding: 20px 0;
+    background-image: url(../assets/header-alt.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.wrapper{
+    width:80%;
+    margin: 0 auto;
+}
+
+ul {
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+section{
+    padding:100px 0;/*Removes padding between sections, alternatively can set padding to 0*/
 }

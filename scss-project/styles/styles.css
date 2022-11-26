@@ -1,27 +1,73 @@
 h1 {
+  font-size: 104.6px;
+  line-height: 87.3px;
+  margin: 10% 0 0 0;
+}
+
+h2 {
+  font-family: "Barlow", sans-serif;
+  color: #042259;
+  font-size: 37.2px;
+  line-height: 37.9px;
+  letter-spacing: 0.3px;
+  margin: 0;
+}
+
+span {
+  display: block;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+nav a {
+  color: #042259;
+  font-family: "Catamaran", sans-serif;
+  font-size: 18px;
+  line-height: 29px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  padding: 0px 20px 15px 20px;
+  /*Removes the underline*/
+  text-decoration: none;
+  text-align: center;
+}
+
+/*Base Style CSS for the site*/
+html {
+  /*Default Background colour set to pale rose*/
   background-color: #F5C8CF;
-  font-style: "EmblemaOne";
+  /*Default Font set to Emblema One*/
+  font-family: "Emblema One", cursive;
+  /*Defauly Font colour set to water blue*/
   color: #1D81CC;
 }
 
-nav {
-  background-color: #F0F5FF;
-  font-style: "EmblemaOne";
-  color: #042259;
-}
-nav ul {
-  background-color: #F0F5FF;
-  font-style: "EmblemaOne";
-  color: #042259;
-}
-nav ul li {
-  background-color: #F0F5FF;
-  font-style: "EmblemaOne";
-  color: #042259;
+header {
+  height: 100vh;
+  padding: 20px 0;
+  background-image: url(../assets/header-alt.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-body {
-  background-color: #F5C8CF;
-  font-style: "EmblemaOne";
-  color: #042259;
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+section {
+  padding: 100px 0; /*Removes padding between sections, alternatively can set padding to 0*/
 }
