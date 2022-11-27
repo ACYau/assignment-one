@@ -5,11 +5,9 @@
 
 /*Base Style CSS for the site*/
 html {
-    /*Default Background colour set to pale rose*/
-    background-color: $backgroundcolor1;
     /*Default Font set to Emblema One*/
     font-family: $font-family1;
-    /*Defauly Font colour set to water blue*/
+    /*Default Font colour set to water blue*/
     color: $fontcolor3;
 }
 
@@ -34,4 +32,11 @@ ul {
 
 section{
     padding:100px 0;/*Removes padding between sections, alternatively can set padding to 0*/
+}
+
+/*Targets Section Headings*/
+h3{
+    font-family: $font-family1;
+    font-size: 42px;
+    margin:0 auto;
 }

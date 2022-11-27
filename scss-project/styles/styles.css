@@ -17,6 +17,33 @@ span {
   display: block;
 }
 
+/*Social Media Icon Size*/
+.fa-brands {
+  font-size: 30px;
+  margin: 0;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /*Positions Social Media Icons to the right*/
+  /*Adds spacing between social media icons*/
+  margin: 0;
+}
+.icons ul {
+  position: absolute;
+  top: 120px;
+  right: 50px;
+}
+.icons li {
+  padding: 10px;
+}
+
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,13 +66,171 @@ nav a {
   text-align: center;
 }
 
+/*Customizing Gallery Section for NEWS APPLIANCES*/
+.gallery {
+  background-color: #FCDDE2;
+}
+.gallery h3 {
+  text-align: center;
+  padding: 0px 0px 70px 0;
+}
+.gallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.gallery li {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 10px;
+}
+
+.best {
+  background-color: #FCDDE2;
+}
+.best .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.best .imageContainer {
+  margin-right: 40px;
+}
+.best p {
+  color: #1F2022;
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.2px;
+}
+.best .button {
+  width: 130px;
+}
+.best .button a {
+  display: inline-block;
+  width: 100%;
+  font-size: 20px;
+  line-height: 29px;
+  color: white;
+  background-color: #042259;
+  padding: 15px 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.smoothies {
+  background-color: #F0F5FF;
+}
+.smoothies .wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.smoothies .textContainer {
+  margin: 0 10%;
+}
+.smoothies p {
+  color: #1F2022;
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.2px;
+}
+.smoothies .button {
+  width: 130px;
+}
+.smoothies .button a {
+  display: inline-block;
+  width: 100%;
+  font-size: 20px;
+  line-height: 29px;
+  color: #042259;
+  background-color: #F5C8CF;
+  padding: 15px 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.home {
+  background-color: #F0F5FF;
+}
+.home .wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.home .textContainer {
+  margin: 0 10%;
+}
+.home p {
+  color: #1F2022;
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.2px;
+}
+.home .button {
+  width: 130px;
+}
+.home .button a {
+  display: inline-block;
+  width: 100%;
+  font-size: 20px;
+  line-height: 29px;
+  color: #042259;
+  background-color: #F5C8CF;
+  padding: 15px 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/*icon gallery size*/
+.fa-solid {
+  font-size: 50px;
+  color: #042259;
+  margin: 0;
+}
+
+.icongallery {
+  background-color: #FCDDE2;
+}
+.icongallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+.icongallery li {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+.icongallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 10px;
+}
+.icongallery p {
+  font-size: 31.2px;
+}
+
 /*Base Style CSS for the site*/
 html {
-  /*Default Background colour set to pale rose*/
-  background-color: #F5C8CF;
   /*Default Font set to Emblema One*/
   font-family: "Emblema One", cursive;
-  /*Defauly Font colour set to water blue*/
+  /*Default Font colour set to water blue*/
   color: #1D81CC;
 }
 
@@ -70,4 +255,11 @@ ul {
 
 section {
   padding: 100px 0; /*Removes padding between sections, alternatively can set padding to 0*/
+}
+
+/*Targets Section Headings*/
+h3 {
+  font-family: "Emblema One", cursive;
+  font-size: 42px;
+  margin: 0 auto;
 }

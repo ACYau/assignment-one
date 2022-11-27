@@ -14,8 +14,31 @@ h2{
     letter-spacing: 0.3px;
     margin:0;
 }
+
 span{
     display:block;
+}
+
+/*Social Media Icon Size*/
+.fa-brands{
+    font-size: 30px;
+    margin:0;
+}
+
+.icons{
+    display:flex;
+    flex-direction: column;
+    /*Positions Social Media Icons to the right*/
+    ul{
+        position: absolute;
+        top: 120px;
+        right: 50px;
+    }
+    /*Adds spacing between social media icons*/
+    li{
+        padding: 10px;
+    }
+    margin:0;
 }
 
 nav{
