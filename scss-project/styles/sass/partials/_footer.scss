@@ -1,1 +1,51 @@
 @use 'variables' as *;
+
+.footer{
+    padding: 100px 0;
+    background-color: $backgroundcolor2;
+    .wrapper{
+        width:80%;
+        margin: 0 auto;
+        display: flex;
+    }
+    nav {
+        ul{
+            flex-direction: column;
+        }
+        a{
+            color: $fontcolor3;
+            text-align: right;
+            font-family: $font-family1;
+            font-size: 25px;
+            margin:0;
+        }
+    }
+}
+
+
+.form{
+    flex-basis: 60%;
+    /*Removes white space between inline block elements*/
+    font-size:0;
+    /*Targets email form*/
+    input[type=email]{
+        width: 60%;
+        padding: 14px 20px;
+        margin: 0 auto;
+        border: 1px solid $backgroundcolor1;
+    }
+    /*Targets Subscribe Button*/
+    input[type=subscribe]{
+        width:20%;
+        height: 45px;
+        font-size: 20px;
+        font-family: $font-family1;
+        color:$fontcolor1;
+        background-color: $backgroundcolor1;
+        border: none;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+

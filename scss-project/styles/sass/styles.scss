@@ -4,11 +4,14 @@
 @use 'partials/footer';
 
 /*Base Style CSS for the site*/
-html {
+body {
     /*Default Font set to Emblema One*/
     font-family: $font-family1;
     /*Default Font colour set to water blue*/
     color: $fontcolor3;
+    /*Removes default margins/padding*/
+    margin:0;
+    padding:0;
 }
 
 header{
@@ -31,7 +34,24 @@ ul {
 }
 
 section{
-    padding:100px 0;/*Removes padding between sections, alternatively can set padding to 0*/
+    padding:0;/*Removes padding between sections, alternatively can set padding to 0*/
+}
+
+/*Targets Webpage Title*/
+h1 {
+    font-size: 104.6px;
+    line-height: 87.3px;
+    margin:10% 0 0 0;
+}
+
+/*Targets sub-title*/
+h2{
+    font-family: $font-family2;
+    color: $fontcolor1;
+    font-size: 37.2px;
+    line-height:37.9px;
+    letter-spacing: 0.3px;
+    margin:0;
 }
 
 /*Targets Section Headings*/
@@ -39,4 +59,18 @@ h3{
     font-family: $font-family1;
     font-size: 42px;
     margin:0 auto;
+}
+
+/*Targets Footer Headings*/
+h4{
+    font-family: $font-family1;
+    font-size: 25px;
+    margin:0;
+}
+
+p {
+    color: #1F2022;
+    font-family: "Barlow", sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.2px;
 }

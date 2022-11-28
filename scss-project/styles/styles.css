@@ -1,18 +1,3 @@
-h1 {
-  font-size: 104.6px;
-  line-height: 87.3px;
-  margin: 10% 0 0 0;
-}
-
-h2 {
-  font-family: "Barlow", sans-serif;
-  color: #042259;
-  font-size: 37.2px;
-  line-height: 37.9px;
-  letter-spacing: 0.3px;
-  margin: 0;
-}
-
 span {
   display: block;
 }
@@ -55,6 +40,7 @@ nav ul {
 nav a {
   color: #042259;
   font-family: "Catamaran", sans-serif;
+  background-color: transparent;
   font-size: 18px;
   line-height: 29px;
   text-align: center;
@@ -72,7 +58,7 @@ nav a {
 }
 .gallery h3 {
   text-align: center;
-  padding: 0px 0px 70px 0;
+  padding: 100px 0 70px 0;
 }
 .gallery ul {
   display: -webkit-box;
@@ -95,7 +81,31 @@ nav a {
   padding: 10px;
 }
 
+.button {
+  width: 130px;
+}
+
+p {
+  color: #1F2022;
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.2px;
+}
+
+a {
+  display: inline-block;
+  width: 100%;
+  font-size: 20px;
+  line-height: 29px;
+  color: #042259;
+  background-color: #F5C8CF;
+  padding: 15px 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
 .best {
+  padding: 100px 0;
   background-color: #FCDDE2;
 }
 .best .wrapper {
@@ -106,25 +116,9 @@ nav a {
 .best .imageContainer {
   margin-right: 40px;
 }
-.best p {
-  color: #1F2022;
-  font-family: "Barlow", sans-serif;
-  font-size: 20px;
-  letter-spacing: 0.2px;
-}
-.best .button {
-  width: 130px;
-}
-.best .button a {
-  display: inline-block;
-  width: 100%;
-  font-size: 20px;
-  line-height: 29px;
+.best a {
   color: white;
   background-color: #042259;
-  padding: 15px 10px;
-  text-decoration: none;
-  text-align: center;
 }
 
 .smoothies {
@@ -138,26 +132,7 @@ nav a {
 }
 .smoothies .textContainer {
   margin: 0 10%;
-}
-.smoothies p {
-  color: #1F2022;
-  font-family: "Barlow", sans-serif;
-  font-size: 20px;
-  letter-spacing: 0.2px;
-}
-.smoothies .button {
-  width: 130px;
-}
-.smoothies .button a {
-  display: inline-block;
-  width: 100%;
-  font-size: 20px;
-  line-height: 29px;
-  color: #042259;
-  background-color: #F5C8CF;
-  padding: 15px 10px;
-  text-decoration: none;
-  text-align: center;
+  padding: 100px 0 0 0;
 }
 
 .home {
@@ -171,26 +146,7 @@ nav a {
 }
 .home .textContainer {
   margin: 0 10%;
-}
-.home p {
-  color: #1F2022;
-  font-family: "Barlow", sans-serif;
-  font-size: 20px;
-  letter-spacing: 0.2px;
-}
-.home .button {
-  width: 130px;
-}
-.home .button a {
-  display: inline-block;
-  width: 100%;
-  font-size: 20px;
-  line-height: 29px;
-  color: #042259;
-  background-color: #F5C8CF;
-  padding: 15px 10px;
-  text-decoration: none;
-  text-align: center;
+  padding: 100px 0 0 0;
 }
 
 /*icon gallery size*/
@@ -204,6 +160,7 @@ nav a {
   background-color: #FCDDE2;
 }
 .icongallery ul {
+  padding: 100px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -226,12 +183,67 @@ nav a {
   font-size: 31.2px;
 }
 
+.footer {
+  padding: 100px 0;
+  background-color: #F0F5FF;
+}
+.footer .wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer nav ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footer nav a {
+  color: #1D81CC;
+  text-align: right;
+  font-family: "Emblema One", cursive;
+  font-size: 25px;
+  margin: 0;
+}
+
+.form {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  /*Removes white space between inline block elements*/
+  font-size: 0;
+  /*Targets email form*/
+  /*Targets Subscribe Button*/
+}
+.form input[type=email] {
+  width: 60%;
+  padding: 14px 20px;
+  margin: 0 auto;
+  border: 1px solid #F5C8CF;
+}
+.form input[type=subscribe] {
+  width: 20%;
+  height: 45px;
+  font-size: 20px;
+  font-family: "Emblema One", cursive;
+  color: #042259;
+  background-color: #F5C8CF;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
 /*Base Style CSS for the site*/
-html {
+body {
   /*Default Font set to Emblema One*/
   font-family: "Emblema One", cursive;
   /*Default Font colour set to water blue*/
   color: #1D81CC;
+  /*Removes default margins/padding*/
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -254,7 +266,24 @@ ul {
 }
 
 section {
-  padding: 100px 0; /*Removes padding between sections, alternatively can set padding to 0*/
+  padding: 0; /*Removes padding between sections, alternatively can set padding to 0*/
+}
+
+/*Targets Webpage Title*/
+h1 {
+  font-size: 104.6px;
+  line-height: 87.3px;
+  margin: 10% 0 0 0;
+}
+
+/*Targets sub-title*/
+h2 {
+  font-family: "Barlow", sans-serif;
+  color: #042259;
+  font-size: 37.2px;
+  line-height: 37.9px;
+  letter-spacing: 0.3px;
+  margin: 0;
 }
 
 /*Targets Section Headings*/
@@ -262,4 +291,18 @@ h3 {
   font-family: "Emblema One", cursive;
   font-size: 42px;
   margin: 0 auto;
+}
+
+/*Targets Footer Headings*/
+h4 {
+  font-family: "Emblema One", cursive;
+  font-size: 25px;
+  margin: 0;
+}
+
+p {
+  color: #1F2022;
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.2px;
 }

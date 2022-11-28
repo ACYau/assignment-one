@@ -1,20 +1,5 @@
 @use 'variables' as *;
 
-h1 {
-    font-size: 104.6px;
-    line-height: 87.3px;
-    margin:10% 0 0 0;
-}
-
-h2{
-    font-family: $font-family2;
-    color: $fontcolor1;
-    font-size: 37.2px;
-    line-height:37.9px;
-    letter-spacing: 0.3px;
-    margin:0;
-}
-
 span{
     display:block;
 }
@@ -49,6 +34,7 @@ nav{
     a{
         color:$fontcolor1;
         font-family: $font-family3;
+        background-color: transparent;
         font-size: 18px;
         line-height: 29px;
         text-align:center;
