@@ -1,0 +1,55 @@
+/*Media Queries*/
+@media(max-width:768px){
+    nav{
+        ul{
+            li{
+                visibility: collapse;
+            }
+            li:last-child{
+                visibility: visible;
+            }
+        }
+    }
+    .icons{
+        display:none;
+    }
+    .gallery {
+        li{
+            flex-basis:45%;
+            justify-content: space-between;
+        }
+        li:nth-child(3){
+            display:none;
+        }
+    }
+    .best{
+        text-align: center;
+    }
+    .smoothies .wrapper{
+        flex-direction: column-reverse;
+        padding:  0 0 100px 0;
+        img{
+            height: 60vh;
+            width: 100vw;
+        }
+    }
+    .home{
+        padding:  0 0 100px 0;
+        img{
+            height: 60vh;
+            width: 100vw;
+        }
+    }
+    .image-container{
+        text-align: center;
+    }
+    .footer-content {
+        .contact{
+            display: inline;
+            padding: 100px 0 0 0;
+        }
+        nav{
+            display:inline;
+        }
+    }
+}

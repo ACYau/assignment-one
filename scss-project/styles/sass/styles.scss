@@ -1,14 +1,16 @@
+@use 'partials/setup'; //uses partial file for setup
 @use 'partials/variables' as *;
 @use 'partials/header';
 @use 'partials/main';
 @use 'partials/footer';
+@use 'partials/mediaqueries';
 
 /*Base Style CSS for the site*/
 body {
     /*Default Font set to Emblema One*/
     font-family: $font-family1;
     /*Default Font colour set to water blue*/
-    color: $fontcolor3;
+    color: $color-3;
     /*Removes default margins/padding*/
     margin:0;
     padding:0;
@@ -18,7 +20,7 @@ header{
     height:100vh;
     padding: 20px 0;
     background-image: url(../assets/header-alt.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -37,6 +39,10 @@ section{
     padding:0;/*Removes padding between sections, alternatively can set padding to 0*/
 }
 
+span{
+    display:block;
+}
+
 /*Targets Webpage Title*/
 h1 {
     font-size: 104.6px;
@@ -47,7 +53,7 @@ h1 {
 /*Targets sub-title*/
 h2{
     font-family: $font-family2;
-    color: $fontcolor1;
+    color: $color-1;
     font-size: 37.2px;
     line-height:37.9px;
     letter-spacing: 0.3px;
@@ -68,9 +74,34 @@ h4{
     margin:0;
 }
 
-p {
-    color: #1F2022;
-    font-family: "Barlow", sans-serif;
-    font-size: 20px;
+p{
+    color: $color-2;
+    font-family: $font-family2;
+    font-size:20px;
     letter-spacing: 0.2px;
+}
+
+a{
+    display: inline-block;
+    width:100%;
+    font-size: 20px;
+    line-height: 29px;
+    color:$color-1;
+    background-color: $color-4;
+    padding: 15px 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+@media(max-width:768px){
+    header{
+        height:100vh;
+        background-image: url(../assets/header-alt-mobile.png);
+        background-size: cover;
+    }
+    .wrapper{
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+    }
 }

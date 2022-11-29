@@ -2,7 +2,7 @@
 
 /*Customizing Gallery Section for NEWS APPLIANCES*/
 .gallery{
-    background-color: $backgroundcolor3;
+    background-color: $color-6;
     h3{
         text-align: center;
         padding: 100px 0 70px 0;
@@ -23,77 +23,69 @@
     }
 }
 
-.button{
-    width: 130px;
-}
-
-p{
-    color: $fontcolor2;
-    font-family: $font-family2;
-    font-size:20px;
-    letter-spacing: 0.2px;
-}
-
-a{
-    display: inline-block;
-    width:100%;
-    font-size: 20px;
-    line-height: 29px;
-    color:$fontcolor1;
-    background-color: $backgroundcolor1;
-    padding: 15px 10px;
-    text-decoration: none;
-    text-align: center;
-}
-
 .best{
     padding: 100px 0;
-    background-color: $backgroundcolor3;
+    background-color: $color-6;
     .wrapper{
         display:flex;
     }
-    .imageContainer{
+    .image-container{
         margin-right:40px;
     }
     a{
         color:white;
-        background-color: $fontcolor1;
+        background-color: $color-1;
+    }
+    .button{
+        width: 25%;
     }
 }
 
 .smoothies{
-    background-color: $backgroundcolor2;
+    background-color: $color-5;
     .wrapper{
         width:100%;
         display:flex;
     }
-    .textContainer{
+    .text-container{
         margin: 0 10%;
         padding: 100px 0 0 0;
+    }
+    .button{
+        width: 28%;
+    }
+    img{
+        width:49vw;
     }
 }
 
 .home{
-    background-color: $backgroundcolor2;
+    background-color: $color-5;
     .wrapper{
         width:100%;
         display:flex;
     }
-    .textContainer{
+    .text-container{
         margin: 0 10%;
         padding: 100px 0 0 0;
+        .button{
+            width: 28%;
+        }
+    }
+    img{
+        width:50vw;
     }
 }
 
 /*icon gallery size*/
 .fa-solid{
     font-size: 50px;
-    color: $fontcolor1;
+    color: $color-1;
     margin:0;
 }
 
-.icongallery{
-    background-color: $backgroundcolor3;
+.icon-gallery{
+    background-color: $color-6;
     ul{
         padding: 100px 0;
         display:flex;

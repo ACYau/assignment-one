@@ -1,11 +1,7 @@
 @use 'variables' as *;
 
-span{
-    display:block;
-}
-
 /*Social Media Icon Size*/
-.fa-brands{
+.fa-brands, .fa-solid{
     font-size: 30px;
     margin:0;
 }
@@ -23,16 +19,18 @@ span{
     li{
         padding: 10px;
     }
-    margin:0;
 }
 
 nav{
     ul{
         display:flex;
         justify-content: right;
+        li:last-child{
+            visibility: collapse;
+        }
     }
     a{
-        color:$fontcolor1;
+        color:$color-1;
         font-family: $font-family3;
         background-color: transparent;
         font-size: 18px;

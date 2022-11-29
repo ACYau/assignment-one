@@ -1,8 +1,8 @@
 @use 'variables' as *;
 
-.footer{
+.footer-content{
     padding: 100px 0;
-    background-color: $backgroundcolor2;
+    background-color: $color-5;
     .wrapper{
         width:80%;
         margin: 0 auto;
@@ -13,7 +13,7 @@
             flex-direction: column;
         }
         a{
-            color: $fontcolor3;
+            color: $color-3;
             text-align: right;
             font-family: $font-family1;
             font-size: 25px;
@@ -21,18 +21,18 @@
         }
     }
 }
-
-
+.contact{
+    padding: 0 10%;
+}
 .form{
-    flex-basis: 60%;
+    flex-basis: 50%;
     /*Removes white space between inline block elements*/
     font-size:0;
     /*Targets email form*/
     input[type=email]{
-        width: 60%;
-        padding: 14px 20px;
-        margin: 0 auto;
-        border: 1px solid $backgroundcolor1;
+        width: 80%;
+        padding: 20px 20px;
+        border: 2px solid $color-4;
     }
     /*Targets Subscribe Button*/
     input[type=subscribe]{
@@ -40,8 +40,8 @@
         height: 45px;
         font-size: 20px;
         font-family: $font-family1;
-        color:$fontcolor1;
-        background-color: $backgroundcolor1;
+        color: $color-1;
+        background-color: $color-4;
         border: none;
         text-decoration: none;
         text-align: center;
@@ -49,3 +49,11 @@
     }
 }
 
+.copyright{
+    padding: 15px 0;
+    background-color: $color-1;
+    p{
+        color: white;
+        text-align: center;
+    }
+}
